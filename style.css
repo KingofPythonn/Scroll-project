@@ -1,59 +1,46 @@
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
 }
 
-#section1 {
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     height: 100vh;
-    background-color: pink;
 }
 
-#section2 {
+section {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+}
+
+
+.First {
     background-color: yellow;
 }
 
-#section3 {
-    height: 100vh;
-    background-color: red;
+.Second {
+    background-color: orchid;
+
 }
 
-#section4 {
-    height: 100vh;
+.Third {
     background-color: aqua;
 }
 
-
-
-
-
-
-
-
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+.Fourth {
+    background-color: red;
 }
 
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.p1 {
-    position: relative;
-
-    margin: 0;
-
-}
-
-.p2 {
-    position: relative;
-    ;
+h1 {
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px 4px black;
 }
